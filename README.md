@@ -1,2 +1,2 @@
-# kostea123.github.io
+# Kostea
 My First Site

@@ -1,9 +1,10 @@
 body{
 	background-color: #DADADA;
-	width: 100%;
+	width: 1680px;
 	margin:0 auto;
 	background-image: url(image/1.jpg);
 	background-repeat: no-repeat;
+	min-width: inherit;
 }
 /*<--------------------------header nav bar------------------------------->*/
 header{

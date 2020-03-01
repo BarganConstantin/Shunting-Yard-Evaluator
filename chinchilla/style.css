@@ -1,0 +1,82 @@
+body{
+	background-color: #DADADA;
+	width: 100%;
+	margin:0 auto;
+	background-image: url(image/1.jpg);
+	background-repeat: no-repeat;
+}
+/*<--------------------------header nav bar------------------------------->*/
+header{
+	border: 1px solid black;
+	width: 100%;
+	float: left;
+	background-color:#9A9A9A;
+	background: rgba(162, 162, 162, 0.6);;	
+}
+
+/*<-------HeaderLogo------->*/
+
+.HeaderLogo img {
+	/*border: 1px solid black;*/
+	width: 140px;
+	min-width: inherit;
+	float: left;
+	margin-top: 3px;
+}
+
+ /*<-------HeaderTitle------->*/
+.HeaderTitle{
+	display: inline-block;
+	float: left;
+  	width: 30%;
+  	margin-left:25px;
+  	/*border:1px solid black;*/
+}
+
+.HeaderTitle h1{
+	font-family: 'Meddon', serif ;
+	text-align: center;
+	font-size: 42px;
+	/*border:1px solid green;*/
+	margin-top:10px;
+	margin-bottom: 0px;
+}
+
+/*<-------HeaderNavElements------->*/
+ul{ 
+	/*border:1px solid green;*/
+	padding-left:15px;
+	padding-right: 0px;
+	margin-top: 21px;
+
+}
+
+li{ 
+	display: inline;
+	/*border:1px solid black;*/
+	margin-right: 21px;
+
+	
+	
+}
+
+header a{ 
+	text-decoration: none;
+	color: black;
+	font-family: "Century Gothic", serif;
+	font-size: 25px;
+
+}
+
+header a:hover{
+	color: blue;
+	transition-duration: 0.8s;
+}
+
+.HeaderNav{
+	/*border:1px solid black;*/
+	float:left;
+	width: auto;
+	margin-top: 17px;
+	margin-left: 190px;
+}

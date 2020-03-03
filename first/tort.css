@@ -2,6 +2,7 @@ body{
 	margin: auto;
 	background-image: url(images/1.jpg);/*trebuie de modificat in alt block*/
 	background-repeat: no-repeat;
+	min-width:1200px;
 }
 
 header{

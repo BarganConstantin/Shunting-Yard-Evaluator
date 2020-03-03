@@ -4,7 +4,7 @@ body{
 	margin:0 auto;
 	background-image: url(image/1.jpg);
 	background-repeat: no-repeat;
-/* 	min-width: inherit; */
+	min-width: inherit;
 }
 /*<--------------------------header nav bar------------------------------->*/
 header{

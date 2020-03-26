@@ -1,3 +1,5 @@
 # Kostea
 My First Site
-[I'm an inline-style link](https://www.google.com)
+[Ex1](https://kostea123.github.io/first/index.html)
+[Ex2](https://kostea123.github.io/chinchilla/)
+[Ex3](https://kostea123.github.io/lectie1/orar.html)

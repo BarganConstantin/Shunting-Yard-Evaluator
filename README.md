@@ -1,3 +1,3 @@
 # Kostea
 My First Site
-kostea123.github.io/chinchilla/
+[I'm an inline-style link](https://www.google.com)

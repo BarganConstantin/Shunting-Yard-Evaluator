@@ -1,3 +1,9 @@
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('fonts/WebFont.eot');
+	src: url('fonts/meddon-regular-webfont.woff') format('woff');
+}
+
 body{
 	background-color: #DADADA;
 	width: 1680px;

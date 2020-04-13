@@ -45,7 +45,7 @@ div,li{
 	padding-top:30px; 
 	padding-bottom:30px;
 	text-align: center;
-	/*padding: 20px;*/
+	padding: 20px;
 	margin-right: 150px;
 	font-family: 'Permanent Marker', cursive;
 	margin-bottom: 5px;
@@ -60,7 +60,7 @@ li:hover{
 	padding-top:30px; 
 	padding-bottom:30px;
 	text-align: center;
-	/*padding: 20px;*/
+	padding: 20px;
 	margin-right: 150px;
 	font-family: 'Permanent Marker', cursive;
 	margin-bottom: 5px;

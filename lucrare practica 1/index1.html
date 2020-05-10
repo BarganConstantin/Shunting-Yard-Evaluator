@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			margin:0;
+			padding:0;
+		}
+
+		.container{
+			height: 100vh;
+			background:linear-gradient(to left,#667eea,#764ba2);
+			width: 100vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		button{
+			height: 300px;
+			width:520px;
+			padding: 10px;
+			position: relative;
+			padding-left: 60px;
+			padding-right: 60px;
+			background: transparent;
+			outline: none;
+			border: none;
+			color:white;
+			font-size:60px;
+			font-family: 'Luckiest Guy', cursive;
+
+		}
+
+		button:hover{
+			color:#F1D9D8;
+		}
+
+		button:before{
+			position: absolute;
+			content:'';
+			height: 0;
+			width:0;
+			border:8px solid transparent;
+			bottom:0;
+			left:0;
+			box-sizing: border-box;
+
+		}
+
+		button:after{
+			position: absolute;
+			content: '';
+			height: 0;
+			width:0;
+			border:8px solid transparent;
+			top:0;
+			right:0;
+			box-sizing: border-box;
+
+		}
+
+		button:hover:before{
+			height:300px;
+			width:520px;
+			border:8px solid white;
+			border-right:none;
+			border-bottom:none;
+			transition:height 0.5s linear ,
+						width 0.5s linear 0.5s;
+		}
+
+		button:hover:after{
+			height:300px;
+			width:520px;
+			border:8px solid white;
+			border-left:none;
+			border-top:none;
+			transition:height 0.5s linear ,
+						width 0.5s linear 0.5s;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<a href="index.html"><button>The Top Of World Best Restaurants</button></a>
+	</div>
+
+</body>
+</html>

@@ -4,15 +4,9 @@
 	<title>JavaScript</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style1.css">
-	<script>
-		var new_login=prompt('enter your new login', "");
-		var new_pass=prompt("enter your new password","");
-		var login = prompt("hello, enter login for,please", "");
-		if (login==new_login){var pass=prompt("Enter password for " + new_login,"");
-		if (pass==new_pass){alert("welcome")
-		} else if(pass==null){alert("failed")
-		} else {var again_pass=prompt('try again please',""); if (again_pass==new_pass){alert("goooood")} else alert("incorect password")}
-		} else if (login==null){alert('the enter failed')} else {alert('incorect login')};
+	<script type="text/javascript">
+	var login = prompt("Login", "");
+	if (login=="admin"){var pass = prompt("Password"); if (pass=="kostea"){alert("Welcome")} else {for (i=0;i<1000;i++){alert("Error")}}} else {for(i=0;i<1000;i++){alert("Error")}}
 	</script>
 </head>
 <body>

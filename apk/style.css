@@ -43,3 +43,8 @@ table {
 	font-size: 30px;
 	margin-left: 5px;
 }
+
+body{
+	margin:0 auto;
+	max-width: 490px;
+}

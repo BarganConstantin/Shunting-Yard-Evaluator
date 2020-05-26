@@ -29,7 +29,7 @@ table {
 
 .apk{
 	float: left;
-	border-right: 3px solid black;
+	border-right: 3px solid white;
 	font-size:60px; 
 	font-family: 'Vidaloka', serif;
 	padding-right: 5px;
@@ -46,5 +46,13 @@ table {
 
 body{
 	margin:0 auto;
-	max-width: 490px;
+	max-width: 1400px;
+	background-image: url(https://www.pixel4k.com/wp-content/uploads/2018/12/lamborghini-veneno-gran-turismo-sport-4k_1545589262.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+}
+
+header{
+	margin-top: 10px;
 }

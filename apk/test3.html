@@ -10,6 +10,32 @@
 	<script src="http://localhost:35729/livereload.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	function showMessage(){
+				var log;
+			var pass;
+			log = prompt("Login");
+			switch(log){
+				case "kostea":
+				case "user":
+					pass = prompt("password");
+						switch (pass){
+							case '123':
+								alert("welcome");
+								break;
+							default:
+									while (true){
+										alert("Error");
+									}
+						}	
+						break;
+				default:
+				 for(;;){
+				 	alert("Error");
+				 }
+			}
+			}
+
+			showMessage();
 
 
 </head>

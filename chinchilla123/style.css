@@ -1,0 +1,42 @@
+body {
+    background-image: url(/pexels-pixabay-326311.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    min-width: 800px;
+}
+
+.devlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 99vh;
+}
+
+.devlogo img {
+    width: 200px;
+    height: 130px;
+    opacity: 0.9;
+}
+
+.devlogo img:hover {
+    opacity: 1;
+}
+
+.devlogo a {
+    text-decoration: none;
+    opacity: 0.8;
+    margin-left: 18px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+.settings img {
+    width: 10px;
+    height: 10px;
+}

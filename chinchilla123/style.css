@@ -5,6 +5,7 @@ body {
     opacity: 1;
     width: 100%;
     min-width: 800px;
+    transition: width 12s;
 }
 
 .devlogo {
@@ -18,17 +19,19 @@ body {
 .devlogo img {
     width: 200px;
     height: 130px;
-    opacity: 0.9;
+    opacity: 1;
+    transition: 1.3s;
+    /* border: 1px solid black; */
 }
 
 .devlogo img:hover {
     opacity: 1;
+    transition: 1.3s;
 }
 
-.devlogo a {
+.qwe {
     text-decoration: none;
-    opacity: 0.8;
-    margin-left: 18px;
+    opacity: 1;
     margin-top: 30px;
     text-align: center;
     font-size: 40px;
@@ -37,6 +40,28 @@ body {
 }
 
 .settings img {
-    width: 10px;
-    height: 10px;
+    width: 80px;
+    height: 80px;
+    transition: 1.3s;
+    /* border: 1px solid black; */
+    margin-left: -40px;
 }
+
+.settings img:hover {
+    width: 125px;
+    height: 125px;
+    transition: 1.3s;
+}
+
+.qwe {
+    transition: 1.3s;
+    /* border: 1px solid black; */
+}
+
+.qwe::before {
+    content: "Chinchilla.md";
+    opacity: 0.9;
+    margin-left: 40px;
+}
+
+qwe:hover {}

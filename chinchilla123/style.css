@@ -17,10 +17,11 @@ body {
 }
 
 .devlogo img {
+    margin-left: 25px;
     width: 200px;
     height: 130px;
     opacity: 1;
-    transition: 1.3s;
+    /* transition: 1.3s; */
     /* border: 1px solid black; */
 }
 
@@ -34,17 +35,18 @@ body {
     opacity: 1;
     margin-top: 30px;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Lobster', cursive;
     color: white;
 }
 
 .settings img {
-    width: 80px;
-    height: 80px;
-    transition: 1.3s;
+    width: 100px;
+    height: 100px;
+    /* transition: 1.3s; */
     /* border: 1px solid black; */
-    margin-left: -40px;
+    /* margin-left: -100px; */
+    margin-top: 30px;
 }
 
 .settings img:hover {
@@ -64,4 +66,29 @@ body {
     margin-left: 40px;
 }
 
-qwe:hover {}
+.date {
+    text-decoration: none;
+    opacity: 1;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Lobster', cursive;
+    color: white;
+    margin-left: 32px;
+    line-height: 40px;
+}
+
+.wer {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    opacity: 1;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Lobster', cursive;
+    color: white;
+}

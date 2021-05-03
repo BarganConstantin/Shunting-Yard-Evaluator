@@ -1,0 +1,125 @@
+body{
+	max-width: 1400px;
+	min-width: 1400px;
+	margin:0 auto;
+	/*border:1px solid black;*/
+	opacity:0.8;
+	
+}
+ 
+ }
+header{
+	/*border:1px solid black;*/
+}
+
+.white-theme h1{
+	font-family:'Carter One', cursive;
+	font-size:35px;	
+	text-align:center;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+
+
+	
+}
+
+.dark-theme h1{
+	font-family:'Carter One', cursive;
+	font-size:35px;	
+	text-align:center;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	color: #D3DBFF;
+
+}
+
+button{
+	background: rgba(38,141,174,.6);
+	border-radius: 30px;
+	border:1px solid rgba(38,141,174,.6);
+	font-family: 'Carter One', cursive;
+	margin-left: 300px;
+	margin-right: 0px;
+	float:right;
+
+}
+button:hover{
+	background: rgba(38,141,174,1);
+	border-radius: 30px;
+	border:1px solid rgba(38,141,174,0.6);
+	font-family: 'Carter One', cursive;
+	margin-left: 300px;
+	margin-right: 0px;
+	float:right;
+}
+.white-theme button:before{
+	content:" dark-theme"
+}
+.dark-theme button:before{
+	content:" white-theme"
+}
+
+ul li{
+	font-family: 'Permanent Marker', cursive;
+}
+
+.zi{
+	float:left;
+	border:3px solid black;
+	height: 250px;
+	background-color: rgba(255,255,255,.6);
+	padding-right: 80px;
+	padding-left: 20px;
+	border-radius: 30px;
+	margin-right:130px;
+	margin-top: 50px;
+}
+
+.zi:hover{
+	float:left;
+	border:3px solid black;
+	height: 250px;
+	background-color: rgba(255,255,255,1);
+	padding-right: 80px;
+	padding-left: 20px;
+	border-radius: 30px;
+	margin-right:130px;
+	margin-top: 50px;
+}
+
+
+.white-theme{
+	background-image: url(https://s2.best-wallpaper.net/wallpaper/3840x2160/1804/Vector-design-landscape-mountains-lake-trees-deer_3840x2160.jpg);
+	background-repeat: no-repeat;
+	height: 100%; 
+	background-size: cover;
+}
+
+.dark-theme{
+
+	background-color: blue;
+	background-image: url(https://wallpapershome.com/images/pages/pic_h/21456.jpg);
+	height: 100%; 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+footer{
+	float:left;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	margin:0 auto;
+	width: 100%;
+	margin-top: 80px;
+	font-family:'Carter One', cursive;
+	padding-right: 15px;
+}
+footer p{
+	text-align: right;
+
+}
+
+main p{
+	font-family: 'Carter One', cursive;
+	font-size:20px;
+}

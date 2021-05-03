@@ -1,0 +1,94 @@
+body {
+    background-image: url(img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    min-width: 800px;
+    transition: width 12s;
+}
+
+.devlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 99vh;
+}
+
+.devlogo img {
+    margin-left: 25px;
+    width: 200px;
+    height: 130px;
+    opacity: 1;
+    /* transition: 1.3s; */
+    /* border: 1px solid black; */
+}
+
+.devlogo img:hover {
+    opacity: 1;
+    transition: 1.3s;
+}
+
+.qwe {
+    text-decoration: none;
+    opacity: 1;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+.settings img {
+    width: 100px;
+    height: 100px;
+    /* transition: 1.3s; */
+    /* border: 1px solid black; */
+    /* margin-left: -100px; */
+    margin-top: 30px;
+}
+
+.settings img:hover {
+    width: 125px;
+    height: 125px;
+    transition: 1.3s;
+}
+
+.qwe {
+    transition: 1.3s;
+    /* border: 1px solid black; */
+}
+
+.qwe::before {
+    content: "Chinchilla.md";
+    opacity: 0.9;
+    margin-left: 40px;
+}
+
+.date {
+    text-decoration: none;
+    opacity: 1;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Lobster', cursive;
+    color: white;
+    margin-left: 32px;
+    line-height: 40px;
+}
+
+.wer {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    opacity: 1;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Lobster', cursive;
+    color: white;
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#menu").on("click", "a", function(event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({
+                    scrollTop: top
+                }, 1500);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="menu__list-link" href="#1" onclick="closeNav()">Despre noi</a>
+        <a class="menu__list-link" href="#2" onclick="closeNav()">Despre chinchilla</a>
+        <a class="menu__list-link" href="#3" onclick="closeNav()">Blanuri</a>
+        <a class="menu__list-link" href="#4" onclick="closeNav()">Oferta</a>
+        <a class="menu__list-link" href="#5" onclick="closeNav()">Galerie</a>
+        <a class="menu__list-link" href="#6" onclick="closeNav()">Contacte</a>
+      </div>
+      <span class="nav__1"  style="font-size:30px;cursor:pointer; position: fixed; margin: 30px;z-index: 10000;" onclick="openNav()">&#9776;</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <nav class="menu" id="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#1">Despre noi</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#2">Despre chinchilla</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#3">Blanuri</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#4">Oferta</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#5">Galerie</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#6">Contacte</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                    <a class="header-phone" href="tel:+37378888826"><div class="number">+37378888826</div></a>
+                
+                
+            </div>
+            <h1 class="header__title">
+                Chinchilla.md
+                <span>RulGrupSRL</span>
+            </h1>
+        </div>
+    </header>
+    <section class="fairy-tail page-section" id="1">
+        <div class="container">
+            <h3 class="fairy-tail__title title">
+                Despre noi
+                <span></span>
+            </h3>
+        </div>
+        <div class="fairy-tail__inner">
+            <div class="fairy-tail__slider">
+                <div class="fairy-tail__item"> <img src="images/fairy-tail-1.jpg" alt=""></div>
+                <div class="fairy-tail__item"><img src="images/fairy-tail-2.jpg" alt=""></div>
+                <div class="fairy-tail__item"><img src="images/fairy-tail-3.jpg" alt=""></div>
+            </div>
+            <div class="fairy-tail__content">
+                <div class="fairy-tail__container">
+                    <div class="fairy-tail__body">
+                        <p class="fairy-tail__text" style="   line-height: 1.6;">
+                            Rulgrup SRL este o fermă din Republica Moldova autorizată în Creșterea Animalelor de Blană, Producerea custilor si accesoriilor, producerea furajului granulat, cu experiențe de peste 8 ani, ce a început activitatea din 2012
+                            <br>
+                            <br> Ferma de Chinchilla este situată la 4 km distanță de com.Stăuceni, mun .Chișinău.
+                            <br>
+                            <br> Ferma de Chinchilla Rulgrup SRL este cel mai mare producător de animale selecte de chinchilla din Republica Moldova. Pentru asta stau la dispoziție 2000 femele de calitate înaltă sau 400 familii 5+1(5 femele + 1 mascul)
+                            aduse din Danemarca și Polonia, o fermă europeană cu o suprafață de peste 1000 m2 contruită de la zero, utilaj performant, plus tehnologie corectă de creștere, ce garanteza cheia succesului.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="our-trip page-section" id="2">
+        <div class="our-trip__inner">
+            <div class="our-trip__content">
+                <div class="our-trip__container">
+                    <div class="our-trip__body">
+                        <div class="our-trip__title-and-list">
+                            <h3 class="our-trip__title title">
+                                Despre <br>
+                                <div class="DespreChinchilla" style="margin-left:80px">chinchilla</div>
+                            </h3>
+                            <div class="our-trip__all-list">
+                                <ul class="our-trip__list">
+                                    <li>Chinchila face parte din familia rozătoarelor. Este originară din America de Sud (Argentina, Peru, Bolivia, Chile). Are corpul acoperit cu blană și poate fi confundată cu veverița, deoarece are coada lungă, membrele
+                                        din față scurte, prevăzute cu 5 degete, iar cele din spate lungi prevăzute cu 4 degete. Membrele sunt folosite pentru deplasare și pentru apucarea hranei. </li>
+                                    <li>Chinchila este un animal nocturn care se hrănește numai cu nutrețuri. Ea se adaptează foarte ușor în captivitate nefiind deloc pretențioasă. Este blândă și cu ea se poate lucra foarte bine</li>
+                                    <li>Importanța economică a chinchilei rezidă din faptul că are o blană extrem de fină, foarte căutată și apreciată pe piața de specialitate. Rezultă faptul că această afacere îți poate aduce venituri mari, astfel încât
+                                        nivelul de trai să crească considerabil, iar veniturile familiei să fie peste media veniturilor din clasă medie din Moldova</li>
+                                </ul>
+                            </div>
+                            <!-- <div class="our-trip__btn-container">
+                                <a href="#" class="our-trip__btn">ЗАБРОНИРОВАТЬ</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-trip__slider">
+                <div class="our-trip__slider-items">
+                    <img src="images/our-trip-1.jpg" alt="">
+                </div>
+                <div class="our-trip__slider-items">
+                    <img src="images/our-trip-2.jpg" alt="">
+                </div>
+                <div class="our-trip__slider-items">
+                    <img src="images/our-trip-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hotel page-section" id="3">
+        <div class="container">
+            <h3 class="hotel__title title">
+                Blanuri
+                <span></span>
+            </h3>
+            <div class="hotel__inner">
+                <img class="hotel__images" src="images/hotel.jpg" alt="">
+                <div class="hotel__content">
+                    <p class="hotel__text">
+                        Blanurile de chinchilla se sorteaza dupa urmatoarele criterii:
+                        <ul style="list-style: disc; margin: 0 0 15px 40px;">
+                            <li>marime</li>
+                            <li>culoare</li>
+                            <li>calitate</li>
+                        </ul>
+
+                    </p>
+                    <p class="hotel__text">
+                        1. Marimea blanurilor de chinchilla se stabileste masurand blanita de la varful botului pana la baza cozii.
+
+                    </p>
+                    <p class="hotel__text">
+                        2. Culoarea blanurilor de chinchilla se imparte in doua categorii:
+                        <ul style="list-style: lower-alpha; margin: 0 0 15px 40px;">
+                            <li>Standard</li>
+                            <li>Black Velvet</li>
+                        </ul>
+
+                    </p>
+                    <p class="hotel__text">
+                        3. Calitatea blanurilor cuprinde 6 clase:
+                        <ul style="list-style: disc; margin-left : 40px;">
+                            <li>Select</li>
+                            <li>First Class</li>
+                            <li>Second Class</li>
+                            <li>M Class</li>
+                            <li>I Class</li>
+                            <li>Low grades</li>
+                        </ul>
+                    </p>
+                    <div class="hotel__gallery">
+                        <a data-fancybox="images" data-width="2048" data-height="1365" href="images/hotel-gallery-1.jpg">
+                            <img src="images/hotel-gallery-1.jpg" alt="">
+                        </a>
+                        <a data-fancybox="images" data-width="2048" data-height="1365" href="images/hotel-gallery-2.jpg">
+                            <img src="images/hotel-gallery-2.jpg" alt="">
+                        </a>
+                        <a data-fancybox="images" data-width="2048" data-height="1365" href="images/hotel-gallery-3.jpg">
+                            <img src="images/hotel-gallery-3.jpg" alt="">
+                        </a>
+                        <a data-fancybox="images" data-width="2048" data-height="1365" href="images/hotel-gallery-4.jpg">
+                            <img src="images/hotel-gallery-4.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="price page-section" id="4">
+        <div class="container ">
+            <h3 class="price__title title ">
+                Oferta
+            </h3>
+            <div class="price__inner ">
+                <div class="price__on ">
+                    <ul class="price_list " style="list-style: decimal; ">
+                        <li class="price__list-item ">
+                            Familia de chinchilla 5+1 (5 femele si un mascul)
+                        </li>
+                        <li class="price__list-item ">
+                            Cusca pentru reproductie (familie)
+                        </li>
+                        <li class="price__list-item ">
+                            Coliere pentru femele
+                        </li>
+                        <li class="price__list-item ">
+                            Adapatori pentru apa
+                        </li>
+                        <li class="price__list-item ">
+                            Furaj granulat special
+                        </li>
+                        <li class="price__list-item ">
+                            Nisip special pentru imbaiere si Zeolit
+                        </li>
+                        <li class="price__list-item ">
+                            Vitamine si medicamente
+                        </li>
+                        <li class="price__list-item ">
+                            Diverse accesorii necesare pentru o buna crestere a acestor animale
+                        </li>
+                        <li class="price__list-item ">
+                            Consultanta permanenta privind cresterea animalelor achizitionate de la noi
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer " id="6">
+        <div class="container ">
+            <div class="footer__inner ">
+                <div class="footer__contacts ">
+                    <div class="footer__contacts-title ">
+                        Contacte
+                    </div>
+                    <a class="footer__phone " href="tel:+37378888826 ">+37378888826<a>
+                        <br>
+                    <a class="footer__email " href="mailto:chinchillemd@gmail.com ">chinchillemd@gmail.com</a>
+
+                    <div class="footer__social ">
+                        <a class="footer__social-link " href=" ">
+                            <img src="images/footer-youtube.svg " alt=" ">
+                        </a>
+                        <a class="footer__social-link " href="https://www.facebook.com/ChinchillaMoldova">
+                            <img src="images/footer-facebook.svg " alt=" ">
+                        </a>
+                        <a class="footer__social-link " href=" ">
+                            <img src="images/footer-instagram.svg " alt=" ">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__text ">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10865.351547375258!2d28.9301092!3d47.0924464!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5f8f5f5736570f0!2swww.chinchilla.md%20-%20Ferma%20de%20Chinchilla%20(sinsile)%20Moldova%20-%20Rulgrup%20SRL!5e0!3m2!1sen!2s!4v1629320481700!5m2!1sen!2s"
+                        width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+    </footer>
+    <!-- Styles your button (this is a 50x50 pixels image) -->
+<style>
+    .back-to-top {
+        /* Remove the background color */
+        color: #FFFFFF;
+        opacity: 0;
+        transition: opacity .6s ease-in-out;
+        z-index: 999;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+      
+        /* Change the width and height to match your image dimensions */
+        width: 50px;
+        height: 50px;
+        box-sizing: border-box;
+        border-radius: 0%;
+    }
+      
+      .back-to-top.show {
+           opacity: 0.4;
+      }
+    </style>
+    
+    <!-- Adds the back to top link to your website. Replaces the text with an image of your choosing. Add your own image url where it says ADD URL HERE. -->
+    <a href="#" id="back-to-top" class="back-to-top" style="display: inline;">
+      <img src="/images/back-to-top.png" style="border-radius: 30%" >
+    </a>  
+    <!-- Fades in the button when you scroll down -->
+    <script>
+      var link = document.getElementById("back-to-top");
+      var amountScrolled = 250;
+    
+      window.addEventListener('scroll', function(e) {
+          if ( window.pageYOffset > amountScrolled ) {
+              link.classList.add('show');
+          } else {
+              link.className = 'back-to-top';
+          }
+      });
+      
+    <!-- Scroll to Top -->
+      link.addEventListener('click', function(e) {
+          e.preventDefault();
+    
+          var distance = 0 - window.pageYOffset;
+          var increments = distance/(500/16);
+          function animateScroll() {
+              window.scrollBy(0, increments);
+              if (window.pageYOffset <= document.body.offsetTop) {
+                  clearInterval(runAnimation);
+              }
+          };
+          // Loop the animation function
+          var runAnimation = setInterval(animateScroll, 16);
+      });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="js/slick.min.js "></script>
+    <script src="js/jquery.fancybox.min.js "></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>

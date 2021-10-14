@@ -6,9 +6,9 @@ body{
 }
 
 .calci{
-    width: 400px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    width: 380px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,6 +28,7 @@ body{
 #display{
     border: none;
     background: white;
+    margin-bottom: 26px;
     border-radius: 30px;
     width: 300;
     font-size: 20;

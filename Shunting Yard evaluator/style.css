@@ -96,3 +96,11 @@ body{
     background: #00d9ff44;
     opacity: 0.5;
 }
+
+@media (max-width: 450px) {
+    .calci{
+        width: 338px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

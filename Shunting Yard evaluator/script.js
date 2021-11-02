@@ -54,7 +54,14 @@
                 token_index++;
                 if (i == elem_num) break;
             }
-            token_size = token.length;
+            debugger;
+            let token_size = 0;
+            i = 0;
+            while (token[i] != undefined)
+            {
+                token_size++;
+                i++;
+            }
             for (i = 0; i < token_size; i++)
             {
                 alert(token[i]);

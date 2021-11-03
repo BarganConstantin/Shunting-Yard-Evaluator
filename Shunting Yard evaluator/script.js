@@ -35,9 +35,9 @@
             while (i < elem_num)
             {
                 let tmpToken = new String();
-                if (input_expresion[i].charCodeAt(0) > 47 && input_expresion[i].charCodeAt(0) < 58)
+                if (input_expresion[i].charCodeAt(0) > 47 && input_expresion[i].charCodeAt(0) < 58 || i == 0 && input_expresion[i] == "-")
                 {
-                    while (input_expresion[i].charCodeAt(0) > 47 && input_expresion[i].charCodeAt(0) < 58 || input_expresion[i].charCodeAt(0) == 46)
+                    while (input_expresion[i].charCodeAt(0) > 47 && input_expresion[i].charCodeAt(0) < 58 || input_expresion[i].charCodeAt(0) == 46 || i == 0 && input_expresion[i] == "-")
                     {
                         tmpToken = tmpToken + input_expresion[i];
                         i++; 
@@ -111,7 +111,7 @@
             for (let i = 0; i < elem_num; i++)
             {
                 tmpToken = token.shift();
-                if (tmpToken[0].charCodeAt(0) > 47 && tmpToken[0].charCodeAt(0) < 58)
+                if (tmpToken[0].charCodeAt(0) > 47 && tmpToken[0].charCodeAt(0) < 58 || i == 0 && tmpToken[0] == "-")
                 {
                     let num = parseFloat(tmpToken);
                     num_stack.push(num);

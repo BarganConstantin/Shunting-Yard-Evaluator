@@ -78,7 +78,7 @@
                     return 3;
                 case "/":
                     return 3;
-                case "&#8730":
+                case "√":
                     return 4;
             }
         }
@@ -95,8 +95,8 @@
                     return a * b;
                 case "/":
                     return a / b;
-                case "&#8730":
-                    return a;
+                case "√":
+                    return Math.sqrt(a);
             }
         }
 
@@ -159,9 +159,20 @@
                         {
                             while (last_precedence >= current_precedence)
                             {
-                                let a = num_stack.pop();
-                                let b = num_stack.pop();
-                                let tmp_result = make_operation(b, a, last_operation_stack);
+                                let a;
+                                let b;
+                                let tmp_result;
+                                if (last_operation_stack == "√")
+                                {
+                                    a = num_stack.pop();
+                                    tmp_result = make_operation(a, 0, last_operation_stack);
+                                }
+                                else
+                                {
+                                    a = num_stack.pop();
+                                    b = num_stack.pop();
+                                    tmp_result = make_operation(b, a, last_operation_stack);
+                                }
 
                                 num_stack.push(tmp_result);
 
@@ -191,9 +202,20 @@
             }
             while (operation != undefined)
             {
-                let a = num_stack.pop();
-                let b = num_stack.pop();
-                let tmp_result = make_operation(b, a, operation);
+                let a;
+                let b;
+                let tmp_result;
+                if (operation == "√")
+                {
+                    a = num_stack.pop();
+                    tmp_result = make_operation(a, 0, operation);
+                }
+                else
+                {
+                    a = num_stack.pop();
+                    b = num_stack.pop();
+                    tmp_result = make_operation(b, a, operation);
+                }
                 num_stack.push(tmp_result);
                 operation = operation_queue.pop();
             }

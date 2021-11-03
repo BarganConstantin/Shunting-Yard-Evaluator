@@ -34,10 +34,10 @@
             let i = 0;
             while (i < elem_num)
             {
-                let tmpToken = new String();
-                if (input_expresion[i].charCodeAt(0) > 47 && input_expresion[i].charCodeAt(0) < 58 || i == 0 && input_expresion[i] == "-")
+                let tmpToken = new String();debugger;
+                if (input_expresion[i].charCodeAt(0) > 47 && input_expresion[i].charCodeAt(0) < 58 || i == 0 && input_expresion[i] == "-" || i != 0 && input_expresion[i - 1].charCodeAt(0) == 40 && input_expresion[i] == "-")
                 {
-                    while (input_expresion[i].charCodeAt(0) > 47 && input_expresion[i].charCodeAt(0) < 58 || input_expresion[i].charCodeAt(0) == 46 || i == 0 && input_expresion[i] == "-")
+                    while (input_expresion[i].charCodeAt(0) > 47 && input_expresion[i].charCodeAt(0) < 58 || input_expresion[i].charCodeAt(0) == 46 || input_expresion[i] == "-" && i == 0 || input_expresion[i - 1].charCodeAt(0) == 40 && input_expresion[i] == "-")
                     {
                         tmpToken = tmpToken + input_expresion[i];
                         i++; 
@@ -104,14 +104,14 @@
 
         function solve_expresion()
         {
-            make_token();
+            make_token();debugger;
             let num_stack = [];
             let operation_queue = [];
             debugger;
             for (let i = 0; i < elem_num; i++)
             {
                 tmpToken = token.shift();
-                if (tmpToken[0].charCodeAt(0) > 47 && tmpToken[0].charCodeAt(0) < 58 || i == 0 && tmpToken[0] == "-")
+                if (tmpToken[0].charCodeAt(0) > 47 && tmpToken[0].charCodeAt(0) < 58 || tmpToken[0] == "-" && tmpToken[1] != undefined)
                 {
                     let num = parseFloat(tmpToken);
                     num_stack.push(num);
@@ -133,7 +133,7 @@
                         {
                             let a = num_stack.pop();
                             let b = num_stack.pop();
-                            let tmp_result = make_operation(a, b, tmp_operation);
+                            let tmp_result = make_operation(b, a, tmp_operation);
 
                             num_stack.push(tmp_result);
                         }

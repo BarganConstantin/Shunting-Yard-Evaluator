@@ -107,7 +107,7 @@
             make_token();
             let num_stack = [];
             let operation_queue = [];
-
+            debugger;
             for (let i = 0; i < elem_num; i++)
             {
                 tmpToken = token.shift();
@@ -161,7 +161,7 @@
                             {
                                 let a = num_stack.pop();
                                 let b = num_stack.pop();
-                                let tmp_result = make_operation(a, b, last_operation_stack);
+                                let tmp_result = make_operation(b, a, last_operation_stack);
 
                                 num_stack.push(tmp_result);
 
@@ -174,7 +174,7 @@
                                 {
                                     last_precedence = get_precedence(last_operation_stack);
                                 }
-                            }debugger;
+                            }
                             if (last_operation_stack != undefined) operation_queue.push(last_operation_stack);
                             operation_queue.push(tmpToken);
                         }

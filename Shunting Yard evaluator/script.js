@@ -96,7 +96,7 @@
                 case "/":
                     return a / b;
                 case "√":
-                    return Math.sqrt(a);
+                    return newton(a);
             }
         }
 
@@ -223,4 +223,18 @@
             return final_result;
         }
 
-        
+function newton(a)
+{
+    let x = 1;
+    let x_last;
+    let c = 1;
+
+    while (c > 0.0005)
+    {
+        x_last = 0.5 * (x + (a / x));
+        c = Math.abs(x_last - x);
+        x = x_last;
+    }
+
+    return x_last.toFixed(4);
+}

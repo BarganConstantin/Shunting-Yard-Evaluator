@@ -78,6 +78,8 @@
                     return 3;
                 case "/":
                     return 3;
+                case "%":
+                    return 3;
                 case "√":
                     return 4;
             }
@@ -97,6 +99,8 @@
                     return a / b;
                 case "√":
                     return newton(a);
+                case "%":
+                    return a % b;
             }
         }
 

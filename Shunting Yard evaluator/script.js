@@ -34,7 +34,7 @@
             let i = 0;
             while (i < elem_num)
             {
-                let tmpToken = new String();debugger;
+                let tmpToken = new String();
                 if (input_expresion[i].charCodeAt(0) > 47 && input_expresion[i].charCodeAt(0) < 58 || i == 0 && input_expresion[i] == "-" || i != 0 && input_expresion[i - 1].charCodeAt(0) == 40 && input_expresion[i] == "-")
                 {
                     while (input_expresion[i].charCodeAt(0) > 47 && input_expresion[i].charCodeAt(0) < 58 || input_expresion[i].charCodeAt(0) == 46 || input_expresion[i] == "-" && i == 0 || input_expresion[i - 1].charCodeAt(0) == 40 && input_expresion[i] == "-")
@@ -106,12 +106,39 @@
 
         let final_result;
 
+        function check()
+        {
+            debugger;
+            elem_num = input_expresion.length;
+            let a = 0;
+            let b = 0;
+            let i = 0;
+            while (i < elem_num)
+            {
+                if (input_expresion[i] == '(')
+                {
+                    a++;
+                }
+                else if (input_expresion[i] == ')')
+                {
+                    b++;
+                }
+                i++;
+            }
+            return a == b;
+        }
+        
         function solve_expresion()
         {
-            make_token();debugger;
+            let okey = check();
+            if (okey == false)
+            {
+                return "Parantezele introduse gresit";
+            }
+            make_token();
             let num_stack = [];
             let operation_queue = [];
-            debugger;
+            
             for (let i = 0; i < elem_num; i++)
             {
                 tmpToken = token.shift();

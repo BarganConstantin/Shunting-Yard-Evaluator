@@ -91,6 +91,16 @@ The advantages of this algorithm:
 
 ## The algorithm in detail
 
+&nbsp;&nbsp;&nbsp;&nbsp;The given algorithm works using two strings: one input and one output, but it also includes the stack, which in turn is to store instructions that are not yet added to the output queue. As for conversion, the algorithm reads one character at a time and performs actions based on it.
+
+&nbsp;&nbsp;&nbsp;&nbsp;In the initial version of the algorithm, it parses the expression from left to right, thus constructing its postfix equivalent, and each time an operand is encountered it is immediately transferred to the output stream. Thus, operators could be temporarily stored in the stack before being moved into the outflow to ensure the correct order of operations.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Now, let's consider what happens when the expression can contain parentheses. A pair of matching parentheses is equivalent to a compound operand, which must be analyzed as an expression in itself.
+
+So it is understandable that:
+- an open parenthesis, behaves like the beginning of a new expression, in the sense that its previous operands do not belong to the operands that are located after it. Thus, until we meet the closing parenthesis, we will not be able to examine any of the operators in it. For example, in the expression "1 * 2 + 3" we usually do the multiplication only after we have met the meeting, but if we have "1 * (2 + 3)", even if we meet the addition, the multiplication will not take place before its;
+- a closed parenthesis behaves like the end of an expression, because once we get to it, we have to evaluate all the operators accumulated on the stack.
+
 <div align="center">
   <kbd>
     <img src="https://user-images.githubusercontent.com/60443226/166941736-dadb8798-5d28-4836-8b7a-30852cee4718.png" alt="MarineGEO circle logo" width="800"/>

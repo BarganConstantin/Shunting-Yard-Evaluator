@@ -7,13 +7,14 @@
 </div>
 <br/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;It is surprising the transformation of algorithmic thinking, from a particular mathematical tool, into a
-fundamental way of approaching problems in fields that apparently have nothing to do with mathematics. This
-universality of algorithmic thinking is the result of the connection between the algorithm and the computer.
-Today, by algorithm we mean a general method of solving a certain type of problem, a method that can be
-implemented on a computer. In this context, an algorithm is the absolute essence of a routine. Basically, it was
-found that there is no field, no matter how inaccurate and fluctuating it may seem, in which we cannot discover
-algorithmically functioning sectors.
+Table of Contents
+=================
+* [Abstract](#Abstract)
+
+# Abstract
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;It is surprising the transformation of algorithmic thinking, from a particular mathematical tool, into a fundamental way of approaching problems in fields that apparently have nothing to do with mathematics. This universality of algorithmic thinking is the result of the connection between the algorithm and the computer. Today, by algorithm we mean a general method of solving a certain type of problem, a method that can be implemented on a computer. In this context, an algorithm is the absolute essence of a routine. Basically, it was found that there is no field, no matter how inaccurate and fluctuating it may seem, in which we cannot discover algorithmically functioning sectors.
 
 &nbsp;&nbsp;&nbsp;&nbsp;In this project, we analyzed and implemented the Shunting Yard algorithm, which is very important
 because it simplified calculations in digital devices, and gave a new concept on technologies.

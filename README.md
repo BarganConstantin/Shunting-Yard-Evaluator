@@ -23,10 +23,6 @@ Table of Contents
 
 &nbsp;&nbsp;&nbsp;&nbsp;In this project, we analyzed and implemented the Shunting Yard algorithm, which is very important
 because it simplified calculations in digital devices, and gave a new concept on technologies.
-The report includes 5 chapters, because the study of algorithms involves several aspects, and before
-reaching the implementation we must understand the problem that solves it and how, so the first three sections
-are based on determining the problem, solution, principle of operation, complexity and of course the structural
-description of the system.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Ideally, for a given problem, we should find several algorithms, and then choose the best one from
 them. But what is the criterion for comparison? The efficiency of an algorithm can be expressed in several
@@ -34,13 +30,6 @@ ways. We can analyze a empirically the behavior of the algorithm after implement
 cases on the computer. Or, we can analyze a theoretically the algorithm, before programming it, by
 quantitatively determining the resources (time, memory) needed as a function of the size of the case considered,
 theoretically in a similar way. Memory-execution time issues can also arise.
-
-&nbsp;&nbsp;&nbsp;&nbsp;Chapter four describes the backend mode, the implementation of the algorithm in code, explains the
-data structures we will use, what operations we will perform with them, what language we will use. And this
-is very important, because the operation of the whole program depends on this compartment.
-In turn, chapter five describes the frontend module, which is just as important as the mechanism by
-which the user will communicate with the program, and if it is convenient and has a pleasant appearance, the
-user experience will be a good one.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Understanding this algorithm, will bring us closer to knowing what is going on behind different highperformance programming languages, because the act of creating an algorithm is an art that can never be fully automated. It is basically the universal mechanism of human creativity, which produces the new through an extremely complex synthesis such as: elaboration techniques (rules) + creativity (intuition) = solution.
 

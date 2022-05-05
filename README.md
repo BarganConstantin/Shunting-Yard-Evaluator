@@ -10,9 +10,9 @@
 Table of Contents
 =================
 * [Abstract](#Abstract)
+* [Introduction](#Introduction)
 
 # Abstract
-
 
 &nbsp;&nbsp;&nbsp;&nbsp;It is surprising the transformation of algorithmic thinking, from a particular mathematical tool, into a fundamental way of approaching problems in fields that apparently have nothing to do with mathematics. This universality of algorithmic thinking is the result of the connection between the algorithm and the computer. Today, by algorithm we mean a general method of solving a certain type of problem, a method that can be implemented on a computer. In this context, an algorithm is the absolute essence of a routine. Basically, it was found that there is no field, no matter how inaccurate and fluctuating it may seem, in which we cannot discover algorithmically functioning sectors.
 
@@ -38,6 +38,20 @@ which the user will communicate with the program, and if it is convenient and ha
 user experience will be a good one.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Understanding this algorithm, will bring us closer to knowing what is going on behind different highperformance programming languages, because the act of creating an algorithm is an art that can never be fully automated. It is basically the universal mechanism of human creativity, which produces the new through an extremely complex synthesis such as: elaboration techniques (rules) + creativity (intuition) = solution.
+
+# Introduction
+
+&nbsp;&nbsp;&nbsp;&nbsp;All programmers and of course students are familiar with the use of mathematical operators. For example, to add two values x and y, will be used the plus sign. Few know, in fact, that this is borrowed from mathematical notation called infix notation, which is a big problem for digital devices. That's why math forms an internal mini-language, used in almost any programming language.
+
+&nbsp;&nbsp;&nbsp;&nbsp;The first programming language, which was a real success, was Fortran, the main cause being related to the fact that the arithmetic expressions (ie formulas) were converted into code (translated), hence the name - FORmula TRANslation. [1] Until then, it was necessary to write things like "make up (a, multiply (a, b))", to ensure a correct order of operations. In the Cobol language, solving the problem of implementing automatic formula conversion was considered very difficult because programmers had to write things like "Add A To B Multiply By C". [4] The problem is that operators have properties such as priority and associativity. Therefore, defining an infix function becomes a difficult issue. For example, multiplication has a higher priority than addition or subtraction, which means that the expression "2 + 3 * 4" is not equal to the sum of 2 and 3 multiplied by 4, if we perform the operations from left to right. In fact, we need to multiply 3 by 4 and add 2.
+
+&nbsp;&nbsp;&nbsp;&nbsp;This example shows us that the evaluation of infix expressions often requires rearranging operators and their operands, and for the expression to be easier to read we must also use parentheses, because "(2 + 3) * (4 + 5)" cannot be written without parentheses, otherwise multiplication should be performed first.
+
+&nbsp;&nbsp;&nbsp;&nbsp;The two best known alternatives to infix expressions are writing operators before or after operands, known as prefix and postfix notations. Their logic was put in place by Jan Lukasiewicz in 1920, and since he lived in Poland, the post-fixed variant is also called reverse Polish notation. In this notation an operator is written after its operands, therefore the expression "A + B" is "AB +".
+        
+&nbsp;&nbsp;&nbsp;&nbsp;Therefore, we can say that the fixed notation is an arithmetic and logical representation in which the operator is placed between two operands, at the same time in this case the order of operations is indicated by the parentheses that must surround the operators and operands. In turn, post-fixed notation is the notation used to determine the value of an expression using numerical devices. These notations are called Polish notation, which is a way of writing expressions in which the order of operators and operands is changed from that used in a common expression.
+
+&nbsp;&nbsp;&nbsp;&nbsp;The advantage of Polish notation is that it indicates the correct order of assessment of operators without the use of parentheses.
 
 <div align="center">
   <kbd>
